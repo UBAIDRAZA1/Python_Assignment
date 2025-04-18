@@ -7,5 +7,6 @@ Live this url "https://unit-converter-fojnvxpft8phcbuwokpdcc.streamlit.app/"
 Password Strength Meter run filestreamlit run main.py
 Live this url "https://password-strength-meter-srmpsvvkhmebp2ddxsoetb.streamlit.app/"
 
-
-
+"Growth Mindset Challenge"
+Growth Mindset Challenge run filestreamlit run main.py
+Live this url  "https://growth-mindset-challenge-brain.streamlit.app/"
