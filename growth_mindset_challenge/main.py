@@ -194,7 +194,18 @@ st.markdown('<div class="creator-signature">Created by Ubaid Raza</div>', unsafe
 
 # Hugging Face API setup
 API_URL = "https://api-inference.huggingface.co/models/facebook/opt-350m"
-headers = {"Authorization": f"Bearer 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"}
+
+import os
+headers = {"Authorization": f"Bearer {os.getenv('HUGGINGFACE_TOKEN')}"}
+from dotenv import load_dotenv
+import os
+
+# Load .env file
+load_dotenv()
+
+# Access the token
+token = os.getenv("HUGGINGFACE_TOKEN")
+headers = {"Authorization": f"Bearer {token}"}
 
 def query_huggingface(payload):
     try:
